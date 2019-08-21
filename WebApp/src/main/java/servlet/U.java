@@ -18,8 +18,13 @@ public class U extends HttpServlet {
 	 */
     
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		//после url можно ввести параметры
+		String name = request.getParameter("name");
+		String lastName = request.getParameter("lastName");
 		PrintWriter writer = response.getWriter();
-		writer.println("<h1>HELLO</h1>");
+		
+		writer.println("<h1>HELLO, " + name + " " + lastName +  "</h1>");
+		
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 

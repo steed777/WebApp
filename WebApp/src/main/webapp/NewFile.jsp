@@ -13,10 +13,9 @@
 
 <p>
 <%
-for(int i = 0; i < 10; i++){
-out.println("<p>"+"Hello"+"</p>");
-}
+String name = request.getParameter("name");
 %>
+<%="Hi, " + name %>
 </p>
 </body>
 </html>
