@@ -23,6 +23,11 @@ String string = "текущая дата : " + date;
 <%
 out.println("Hello");
 %>
+<!-- ввод параметров после Url через jsp -->
+<%
+String name = request.getParameter("name");
+%>
+<%="Hi, " + name %>
 </p>
 </body>
 </html>
